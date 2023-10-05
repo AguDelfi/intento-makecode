@@ -1,0 +1,60 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="}a;p!}QSGMwnc)3F!|*U">Player</variable><variable type="KIND_SpriteKind" id="1hfCH@X)`:e9])qva[X:">Projectile</variable><variable type="KIND_SpriteKind" id="#!wT|07{._+-eP5;KwqX">Food</variable><variable type="KIND_SpriteKind" id="Ukh80Md%/HuUHm1kl23W">Enemy</variable><variable id="MaExObEA{))~|waXHrJo">Dino</variable><variable id="#5=y4BE#G03Bc5Xl7_sp">mySprite</variable></variables><block type="pxt-on-start" id="[p,a%q6J-hR/%n)h4F8g" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="Vh$ju@~sRmNaI,O.~xZX"><value name="color"><shadow type="colorindexpicker" id="eg~l%+gNU)l7s6*_J`LR"><field name="index">13</field></shadow></value><next><block type="variables_set" id="Tn~a4D2m#v20-^4oL]I6"><field name="VAR" id="MaExObEA{))~|waXHrJo">Dino</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="+i/!lHZQK}Q1o9j(];al"><value name="img"><shadow type="screen_image_picker" id="1=Y~xKLQ*;uT(:qG`$[P"><field name="img">img`
+. . . . c c c c c . . . . . . . 
+. . c c 5 5 5 5 5 c . . . . . . 
+. c 5 5 5 5 1 f 5 5 c . . . . . 
+c 5 5 5 5 5 f f 5 5 5 c . . . . 
+c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+c c b b 1 b 5 5 5 5 5 5 c . . . 
+c 5 3 3 3 5 5 5 5 5 5 5 d c . . 
+c 5 3 3 3 5 5 5 5 5 d d d c . . 
+. c 5 5 5 5 b 5 5 5 d d d c . . 
+. . c b b c 5 5 b d d d d c . . 
+. c b b c 5 5 b b d d d d c c c 
+. c c c c c c d d d d d d d d c 
+. . . . c c c b 5 5 b d d d c . 
+. . . . . c d 5 5 b b c c c . . 
+. . . . c c c c c c c . . . . . 
+. . . . c b b b c . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"1=Y~xKLQ*;uT(:qG`$[P"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="r]3]BQm$1$kzk:Q.6Z|`"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="C$7Pgq0t(X?#d`2Ds!A|"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="Qs6~z46Q@CET]ou})|U9"><field name="VAR" id="MaExObEA{))~|waXHrJo">Dino</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="9qIp-Y/dsq^^vXNW|sgZ"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id=";yC?Xj3p:El]9QY3zunW"><field name="speed">100</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="afKOa97ZX/ZwqKdV:PpY" x="-10" y="250"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetimage" id="_|A7i+}jYa!B$PU-A^c)"><value name="sprite"><block type="variables_get" id="vS9Dsw6c,2.{Q-f1)!48"><field name="VAR" id="MaExObEA{))~|waXHrJo">Dino</field></block></value><value name="img"><shadow type="screen_image_picker" id="F{h`lP(PYG4fxG$ERGuI"><field name="img">img`
+........................
+............cc..........
+............ccc.........
+........cc..ccccccc.....
+........ccccc555555cc...
+........ccb5555555555c..
+.....cc..b555555555555c.
+.....cccb555555ff155555c
+......cb55555555ff55d55c
+......b5555555555555555c
+...cc.b555dd5555bb13bbc.
+...cccd55ddddd555b3335c.
+....ccdd5ddddddd55b335c.
+.....bddddb55bdddd5555c.
+..cccdddddb55bbbbbcccc..
+.ccccddddddb5555cbcccc..
+.cdccdddddddc555cbc55c..
+.cdddddddddddcccbbc5c...
+.cbddddddd55dbbbbccc....
+.ccbdddddd555dbbbcbc....
+..cccddbbbd555bbccc.....
+....ccbbbbbd555cc.......
+......ccccbddddbc.......
+..........cd5555dc......
+`</field><data>{"commentRefs":[],"fieldData":{"img":"F{h`lP(PYG4fxG$ERGuI"}}</data></shadow></value></block></statement></block><block type="keyonevent" id="-:NDlEHEFRfYL2ruUsu%" x="-10" y="390"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="spritesetimage" id="F:DedIj/YqxV*%/oZRs+"><value name="sprite"><block type="variables_get" id="bQ__-Vr2B:;@*rdF0Y=a"><field name="VAR" id="MaExObEA{))~|waXHrJo">Dino</field></block></value><value name="img"><shadow type="screen_image_picker" id="]#G8-*0zRIhI%=OSN~3K"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . c c c c . . . . . . . . 
+. . c c 5 5 5 5 c c . . . . . . 
+. c 5 5 5 5 5 5 5 5 c . . . . . 
+c 5 5 5 5 5 1 f 5 5 5 c . . . . 
+c 5 5 5 5 5 f f 5 5 5 5 c . . . 
+c c b b 1 b 5 5 5 5 5 5 c . . . 
+c c 3 3 b b 5 5 5 5 5 5 d c . . 
+c 5 3 3 3 5 5 5 5 5 d d d c . . 
+. b 5 5 5 5 5 5 5 5 d d d c . . 
+. . c b b c 5 5 b d d d d c . . 
+. c b b c 5 5 b b d d d d c c c 
+. c c c c c c d d d d d d d d c 
+. . . c c c c d 5 5 b d d d c c 
+. . . c b c c b 5 5 b c c c . . 
+. . . c c c d 5 5 b c . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"]#G8-*0zRIhI%=OSN~3K"}}</data></shadow></value></block></statement></block></xml>
